@@ -1,0 +1,15 @@
+
+TODO
+
+Research debugging apps with VS Code
+
+Build out a simple app
+    At least one form
+    Use Entity Framework???
+    Add gulp build process???
+
+Research dotnet CLI
+    http://dotnet.github.io/getting-started/
+
+.NET Core Website
+    http://dotnet.github.io/
