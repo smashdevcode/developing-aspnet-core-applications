@@ -1,15 +1,82 @@
 
 TODO
 
-Research debugging apps with VS Code
 
-Build out a simple app
-    At least one form
-    Use Entity Framework???
-    Add gulp build process???
 
-Research dotnet CLI
-    http://dotnet.github.io/getting-started/
+
+
+
+
+Update demos.md to point out examples of tag helpers in the layout page
+
+Update demos.md to point out how gulp is being used to process JS and CSS files
+
+
+Build an app from the ground up???
+  What could this look like???
+  Build out my super hero demo app???
+  At least one form
+  Use Entity Framework???
+  Add gulp build process???
+  Test deploying to Azure
+
+Review cut demos...
+  Anything in there that would be worth showing???
+
+
+Update references
+
+
+
+
+
+Read transcripts to the new ASP.NET community standups
+
+Research and write up information on why a static void main method is necessary now
+  Running a command, `dnx [anything]`, dnx looks in the project.json file's commands section for the 'anything' command
+  See http://dotnetliberty.com/index.php/2015/12/24/asp-net-5-entry-point-overview/
+
+How does the dotnet CLI fit into this???
+  These bits are completely separate from the ASP.NET 5 and .NET Core bits (for now)
+  You can natively compile .NET apps (completely standalone .exes)
+  Walk through the installation and example on: http://dotnet.github.io/
+  Sample apps https://github.com/dotnet/core/tree/master/samples
+
+What is this new project.json bit???
+    "compilationOptions": {
+      "emitEntryPoint": true
+    },
+
+
+
+
+
+
+
+Introduction to Tag Helpers
+  https://docs.asp.net/projects/mvc/en/latest/views/tag-helpers/intro.html
+
+Create an ASP.NET 5 web app in Visual Studio Code
+  https://azure.microsoft.com/en-us/documentation/articles/web-sites-create-web-app-using-vscode/
+
+Overview of .NET Ecosystem in 2015
+  http://dotnet.github.io/about/overview.html
 
 .NET Core Website
-    http://dotnet.github.io/
+  http://dotnet.github.io/
+
+gulp-dnx
+  https://www.npmjs.com/package/gulp-dnx
+
+This looks like a great walkthrough of setting up ASP.NET 5 RC1 apps
+  http://www.strathweb.com/2015/12/running-asp-net-5-website-on-iis/
+
+dnx-watch
+  http://www.hanselman.com/blog/IntegratingVisualStudioCodeWithDnxwatchToDevelopASPNET5Applications.aspx
+  `dnu commands install Microsoft.Dnx.Watcher`
+
+Setting Up Tasks in VS Code
+  tasks.json
+
+gulp-shell
+  Adds shell support to gulp

@@ -1,5 +1,5 @@
 
-# Developing ASP.NET Core 1.0 Applications
+# Developing ASP.NET Core Applications
 
 ASP.NET Core 1.0 (previously known as ASP.NET 5) is a new open-source (github.com/aspnet/home) and cross-platform framework for building modern cloud-based Web applications using .NET. It is being built from the ground up to provide an optimized development framework for apps that are either deployed to the cloud or run on-premises. It consists of modular components with minimal overhead, so you retain flexibility while constructing your solutions. You can develop and run your ASP.NET Core applications cross-platform on Windows, Mac, and Linux.
 
