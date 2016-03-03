@@ -6,31 +6,34 @@ TODO
 
 
 
+Add code snippet to show off Web API
+  Test with POSTMAN
 
-Update demos.md to point out examples of tag helpers in the layout page
-
-Update demos.md to point out how gulp is being used to process JS and CSS files
-
-
-Build an app from the ground up???
-  What could this look like???
-  Build out my super hero demo app???
-  At least one form
-  Use Entity Framework???
-  Add gulp build process???
-  Test deploying to Azure
+Add code snippets to show off tag helpers
+  Show before and after version of a simple form
 
 Review cut demos...
   Anything in there that would be worth showing???
 
 
-Update references
+
+
+Run through presentation and demos
+  Test .NET Core installation and CLI
+  Test deploying to Azure
+
+
+
+
 
 
 
 
 
 Read transcripts to the new ASP.NET community standups
+
+Experiment with Docker
+  Docker IP 192.168.99.100
 
 Research and write up information on why a static void main method is necessary now
   Running a command, `dnx [anything]`, dnx looks in the project.json file's commands section for the 'anything' command

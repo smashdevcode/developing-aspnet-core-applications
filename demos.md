@@ -47,15 +47,6 @@ dnvm uninstall 1.0.0-beta8
 
 Or you can just delete it off of the file system.
 
-Note: When using coreclr (at least on OS X) you cannot build using the .NET 4.5.1 target.
-
-```
-"frameworks": {
-  "dnx451": {},
-  "dnxcore50": {}
-},
-```
-
 ## Create New Empty Application
 
 ```
@@ -155,15 +146,6 @@ Your application will "use" middleware.
 * Optionally invoke the next middleware in the sequence or terminate the request directly
 * Use extension methods on IApplicationBuilder to configure middleware
 
-## Web Root
-
-* Root location in your project from which HTTP requests are handled
-* "wwwroot" by default (but can be configured)
-
-## Application Entry Point
-
-TODO
-
 ## Use IIS Platform Handler
 
 The call to `app.UseIISPlatformHandler()` adds middleware for interacting with the IIS HTTP Platform Handler reverse proxy module. The middleware handles forwarded Windows Authentication, request scheme, remote IPs, etc.
@@ -175,6 +157,15 @@ The HTTP Platform Handler (HttpPlatformHandler v1.2) is an IIS module which does
 1. Process management of HTTP Listeners - this could be any process that can listen on a port for HTTP requests, for example Tomcat, Jetty, Node.exe, Ruby, etc.
 1. Proxy requests to the process it manages
 
+## Application Entry Point
+
+This is a recent addition to the `Startup` class. Having a static `Main` method provides symmetry between ASP.NET and Console apps when DNX is starting your application.
+
+## Web Root
+
+* Root location in your project from which HTTP requests are handled
+* "wwwroot" by default (but can be configured)
+
 ## Build
 
 ```
@@ -183,6 +174,15 @@ dnu build
 
 Note: This step is not absolutely necessary as calling DNX to run your application
 will also kick off a build.
+
+Note: When using coreclr (at least on OS X) you cannot build using the .NET 4.5.1 target.
+
+```
+"frameworks": {
+  "dnx451": {},
+  "dnxcore50": {}
+},
+```
 
 ## Broken Builds
 
@@ -212,6 +212,43 @@ dnu commands install Microsoft.Dnx.Watcher
 * Server based on libuv
 * Nginx can be used as a reserve proxy to forward requests to Kestrel
 * See http://druss.co/2015/06/asp-net-5-kestrel-nginx-web-server-on-linux/
+
+## Tag Helpers
+
+Tag Helpers enable server-side code to participate in creating and rendering HTML elements in Razor files.
+
+* An HTML-friendly development experience
+* A rich IntelliSense environment for creating HTML and Razor markup
+* A way to make you more productive and able to produce more robust, reliable, and maintainable code using information only available on the server
+
+Creating a menu item in the `_Layout.cshtml` file using the `ActionLink` HTML helper method:
+
+```
+<li>@Html.ActionLink("Home", "Index", "Home")</li>
+```
+
+becomes this with Tag Helpers:
+
+```
+<li><a asp-controller="Home" asp-action="Index">Home</a></li>
+```
+
+## Front End Build Support
+
+JavaScript and CSS bundling has been removed from ASP.NET MVC. In ASP.NET Core, you rely upon external tools such as gulp.
+
+In the `project.json` file, it's easy to specify commands to run.
+
+```
+"scripts": {
+  "prepublish": [
+    "npm install",
+    "bower install",
+    "gulp clean",
+    "gulp min"
+  ]
+}
+```
 
 ## Deploying to Azure
 
