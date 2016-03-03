@@ -6,12 +6,9 @@ TODO
 
 
 
-Update code snippet presets
-
 Run through presentation and demos
   Practice DNVM commands
   Review location of runtime and packages
-  Test .NET Core installation and CLI
   Test deploying to Azure
 
 
