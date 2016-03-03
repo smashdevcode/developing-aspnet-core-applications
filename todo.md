@@ -1,18 +1,15 @@
 
 # TODO
 
-1. Reset the Live image
+1. Reset the DryRun and Live images
 
 1. Import the new code snippets
 1. Remove the old GitHub repo
 1. Clone the new GitHub repo
+1. Install POSTMAN in the Live image
 
-New Features to Test
-
-1. Referencing a dependency that specifies a newer version of the runtime will
-now cause a specific error to display
-1. dnx-watch
-1. Others???
+1. Install POSTMAN in the Sandbox image
+ 1. Also update the environment setup slide in the Keynote presentation
 
 ## ASP.NET Updates
 

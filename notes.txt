@@ -6,24 +6,34 @@ TODO
 
 
 
-Add code snippet to show off Web API
-  Test with POSTMAN
-
-Add code snippets to show off tag helpers
-  Show before and after version of a simple form
-
-Review cut demos...
-  Anything in there that would be worth showing???
-
-
-
+Update code snippet presets
 
 Run through presentation and demos
+  Practice DNVM commands
+  Review location of runtime and packages
   Test .NET Core installation and CLI
   Test deploying to Azure
 
 
 
+
+Update TODO document
+
+
+
+
+
+Review cut demos...
+  Anything in there that would be worth showing???
+
+Read through DNX documentation
+  https://docs.asp.net/en/latest/dnx/overview.html
+  Application Host
+    The DNX application host is typically the first managed entry point invoked by DNX
+    and is responsible for handling dependency resolution, parsing project.json,
+    providing additional services and invoking the application entry point.
+    The DNX application host provides a set of services to applications through
+    dependency injection (for example, IServiceProvider, IApplicationEnvironment and ILoggerFactory).
 
 
 
@@ -49,12 +59,9 @@ What is this new project.json bit???
     "compilationOptions": {
       "emitEntryPoint": true
     },
-
-
-
-
-
-
+    http://stackoverflow.com/questions/33888632/what-does-compilationoptions-emitentrypoint-mean
+    Executable apps need to include an entry point
+    Libraries do not
 
 Introduction to Tag Helpers
   https://docs.asp.net/projects/mvc/en/latest/views/tag-helpers/intro.html

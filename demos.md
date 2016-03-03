@@ -233,6 +233,26 @@ becomes this with Tag Helpers:
 <li><a asp-controller="Home" asp-action="Index">Home</a></li>
 ```
 
+## Tag Helpers Form Example
+
+* Add `Models` folder
+* Add a `Hero` class
+ * Snippet: \_heroclass
+* Update the `HeroesController.Index` method to return an instance of the `Hero` class
+* Update the `Index.cshtml` view
+ * Add model directive `@model WebApplicationBasic.Models.Hero`
+ * Snippets: \_oldview and \_newview
+
+## Web API
+
+Snippet: \_apicontroller
+
+* Add a `HeroesController` to the `Controllers` folder
+* Use the snippet to add the code
+* Walk through the code
+* Run the app
+* Show the result in POSTMAN (or the browser)
+
 ## Front End Build Support
 
 JavaScript and CSS bundling has been removed from ASP.NET MVC. In ASP.NET Core, you rely upon external tools such as gulp.
@@ -249,6 +269,29 @@ In the `project.json` file, it's easy to specify commands to run.
   ]
 }
 ```
+
+## Environment Variables
+
+Use `export` to see a list of your environment variables. To set an environment variable:
+
+```
+export ASPNET_ENV=Development
+```
+
+This allows code in the `Startup` class to work properly.
+
+```
+if (env.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+else
+{
+    app.UseExceptionHandler("/Home/Error");
+}
+```
+
+For a list of the available environment variables, see https://github.com/aspnet/Home/wiki/Environment-Variables
 
 ## Deploying to Azure
 
