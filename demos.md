@@ -47,6 +47,10 @@ dnvm uninstall 1.0.0-beta8
 
 Or you can just delete it off of the file system.
 
+```
+[disk name]/Users/[username]/.dnx
+```
+
 ## Create New Empty Application
 
 ```
