@@ -1,6 +1,10 @@
 
 # Resources
 
+## ASP.NET Core
+
+[ASP.NET 5 is dead - Introducing ASP.NET Core 1.0 and .NET Core 1.0](http://www.hanselman.com/blog/ASPNET5IsDeadIntroducingASPNETCore10AndNETCore10.aspx)
+
 ## Visual Studio Code
 
 [ASP.NET Core with VS Code](https://code.visualstudio.com/Docs/runtimes/ASPnet5)
