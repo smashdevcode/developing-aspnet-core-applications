@@ -1,24 +1,25 @@
 
 # TODO
 
-1. Import the new code snippets
-1. Remove the old GitHub repo
-1. Clone the new GitHub repo
-1. Install POSTMAN in the Live image
+1. Run `brew update` (to ensure that the majority of the formulae are updated)
 1. Update VS Code
 1. Update Yeoman templates `npm update generator-aspnet`
-1. Run `brew update` at least once (maybe this will speed things up)
+1. Remove the old GitHub repo
+1. Clone the new GitHub repo
+1. Import the new code snippets
 1. Adjust screen resolution
+1. Ensure that the DryRun image is available in case internet access is not working
+1. Reset the Live image
 
-1. Install POSTMAN in the Sandbox image
- 1. Also update the environment setup slide in the Keynote presentation
+## Project Setup
 
-1. Reset the DryRun and Live images
+1. Create project repo for the presentation
+1. Clone project
+1. Create Azure web app
 
-
-
-
-
+1. Test deploying to Azure
+1. Also update the environment setup slide in the Keynote presentation
+ 1. Add POSTMAN
 
 ## Questions
 
